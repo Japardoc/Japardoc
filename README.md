@@ -1,10 +1,35 @@
-- 👋 Hi, I’m @Japardoc
-- 👀 I’m interested in ...
-- 🌱 I’m currently learning ...
-- 💞️ I’m looking to collaborate on ...
-- 📫 How to reach me ...
+const wrapper = document.querySelector(".wrapper");
 
-<!---
-Japardoc/Japardoc is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+const question = document.querySelector(".question");
+
+const gif = document.querySelector(".gif")
+
+const yesBtn = document.querySelector(".yes-btn");
+
+const noBtn = document.querySelector(".no-btn");
+
+yesBtn.addEventListener("click", () => {
+
+question.innerHTML = "Aaaaa, I like you too";
+
+gif.src =
+
+"https://raw.githubusercontent.com/DzarelDeveloper/Img/main/gif.webp"; });
+
+noBtn.addEventListener("mouseover", () => {
+
+const noBtnRect = noBtn.getBoundingClientRect();
+
+const maxX = window.innerWidth - noBtnRect.width;
+
+const maxY = window.innerHeight - noBtnRect.height;
+
+const randomX = Math.floor(Math.random() * maxX);
+
+const randomY = Math.floor(Math.random() * maxY);
+
+noBtn.style.left = randomX + "px";
+
+noBtn.style.top = randomY + "px";
+
+});
